@@ -124,12 +124,43 @@ Isso pode ser configurado usando:
   - ou um serviço de automação.
 
 
+# 🇺🇸 About
 
+Atualização NUP is a Python automation script designed to update spreadsheets automatically.
+
+It works by:
+
+  - Sending requests to collect data
+
+  - Processing the response
+
+  - Updating a Google Sheet automatically
+
+The goal is simple: eliminate manual spreadsheet updates.
+
+Because sometimes the best solution is just automating the problem.
+
+## 📂 Project structure
+.
+├── sheets.py
+├── requirements.txt
+├── README.md
+└── LICENSE.txt
+
+## 🤝 Contributing
+
+Feel free to open issues or submit pull requests if you want to improve the project.
 
 
 
 
 
 # 📜 License
-![License](https://img.shields.io/badge/license-MIT-blue)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![Status](https://img.shields.io/badge/status-active-success)
+![Google Sheets](https://img.shields.io/badge/google--sheets-API-green)
+![API](https://img.shields.io/badge/API-REST-orange)
+![GitHub stars](https://img.shields.io/github/stars/BrennoReboucas/atualizacao_nup)
+
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.

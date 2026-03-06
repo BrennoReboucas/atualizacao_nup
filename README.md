@@ -131,7 +131,5 @@ Isso pode ser configurado usando:
 
 
 # 📜 License
-
-This project is licensed under the MIT License.
-
-See the file LICENSE.txt for more details.
+![License](https://img.shields.io/badge/license-MIT-blue)
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.

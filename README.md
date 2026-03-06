@@ -41,8 +41,6 @@
                                 
 ```
 
-This project automates the update of spreadsheets by collecting data from a request and inserting it directly into Google Sheets.
-
 ---
 
 # 🇧🇷 Sobre o projeto

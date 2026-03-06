@@ -2,7 +2,7 @@
 
 > Automação criada porque alguém pediu atualização automática das planilhas…  
 > ...sem recurso, sem n8n.
-
+```
                                   ←⇦⇨⇨⇨⇨⇨⇦⇨⇨⇦⇦←                                  
                            ⇦⇦⇨⇨⇨←←←←←←←←←←←←←←←←⇨⇨⇨⇨⇦⇦                           
                        →⇨⇨⇨←←→→→→→→→↑↑↑↑↑↑↑↑↑↑→→→→→→←←←⇨⇨→                       
@@ -48,7 +48,7 @@
                        ⇩⇦⇨←←←→→→→→→↑↑↑↑↑↑↑↑↑↑↑→→→→→→←←⇨⇨⇦⇩                       
                            ⇦⇦⇨⇨⇨⇨←←←←←←←→←←←←←←←⇨⇨⇨⇨⇦⇦                           
                                   ←⇦⇦⇨⇦⇦⇨⇦⇦⇦⇦⇦←                                  
-
+```
 
 This project automates the update of spreadsheets by collecting data from a request and inserting it directly into Google Sheets.
 

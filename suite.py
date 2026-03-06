@@ -8,13 +8,13 @@ class Suite:
     #===========================================================================
     def post_nup(self, nup):
         """
-        Find the last status and date of process NUP
+        Retrieve the latest status and date of a NUP process.
         
         Args:
-            nup (str): Unique Number Protocol of Process
+            nup (str): Unique Protocol Number (NUP) of the process
 
         Returns:
-            str: String formatted containing the simple status and date of last history of the process
+            str: String formatted containing the simple status and date of last history of the process.
             (in this format: "STATUS - DD-MM-YYYY")
 
         Example:
@@ -22,18 +22,18 @@ class Suite:
             >>> suite.post_nup("123456/2025")
             'SPS/SEXEC-PSO/CEART - 03-12-2025'
         """
-        # Parameters for Request
+        # Request parameters
         url = "https://suite.prod.papel-zero.suite.ce.gov.br/process/search/filters"
         payload = {"search":nup,"page":1,"order_by":{"date":"desc"},"paginator_count":5}
         headers = {'User-Agent': 'Mozilla/5.0', 'Content-Type': 'application/json'}
 
-        # Request config
+        # Send request
         r = requests.post(url, json=payload, headers=headers)
 
-        # Response to json
+        # Parse response JSON
         data = r.json()
 
-        # Get Last Status and Date of process
+        # Extract latest status and date from process history
         history = data['results'][0]['history_search']
         first_history = history[0]
 

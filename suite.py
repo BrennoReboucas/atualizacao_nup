@@ -15,12 +15,12 @@ class Suite:
 
         Returns:
             str: String formatted containing the simple status and date of last history of the process.
-            (in this format: "STATUS - DD-MM-YYYY")
+            (in this format: "STATUS - DD/MM/YYYY")
 
         Example:
             >>> suite = Suite()
             >>> suite.post_nup("123456/2025")
-            'SPS/SEXEC-PSO/CEART - 03-12-2025'
+            'SPS/SEXEC-PSO/CEART - 03/12/2025'
         """
         # Request parameters
         url = "https://suite.prod.papel-zero.suite.ce.gov.br/process/search/filters"
@@ -41,10 +41,10 @@ class Suite:
         status = first_history['status']
         status = status.partition("(a) ")[2]
 
-        # Get date and format for DD-MM-YYYY
+        # Get date and format for DD/MM/YYYY
         date = first_history['date']
         date = datetime.fromisoformat(date)
-        date = date.strftime("%d-%m-%Y")
+        date = date.strftime("%d/%m/%Y")
 
         # Returns status and date of process with formatation
         return f"{status} - {date}"

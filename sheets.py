@@ -1,9 +1,9 @@
-import gspread, time, json
+import gspread, json
 from suite import Suite
 from oauth2client.service_account import ServiceAccountCredentials
 
-with open("config.json", "r", encoding="utf-8") as arquivo:
-    config = json.load(arquivo)
+with open("sheet.json", "r", encoding="utf-8") as archive:
+    config = json.load(archive)
 
 sheet_id = config["id"]
 
